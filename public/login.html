@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-inter">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +10,89 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ycm.ng/login.html">
     <meta property="og:image" content="https://ycm.ng/assets/login-hero.jpg">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* .login-bg {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE2YTM0YSIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGY5ZjQiIHN0b3Atb3BhY2l0eT0iMC4wNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiLz48L3N2Zz4=');
+            background-size: cover;
+        } */
+        .login-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-bg-top to-bg-bottom">
+<body class="min-h-screen login-bg antialiased">
     <!-- Navigation -->
-    <nav class="glass fixed top-0 left-0 right-0 z-50">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center ">
                 <div class="flex items-center">
-                    <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <img src="../assets/logo-placeholder.svg" alt="YCM Logo" class="h-8 w-auto">
-                        <span class="ml-2 text-xl font-bold text-deep-navy">YCM</span>
+                    <a href="index.html" class="flex-shrink-0 flex items-center group space-x-1">
+                        <div class="w-20 h-20 rounded-xl flex items-center justify-center">
+                            <img src="./assets/images/logooo.png" alt="" class=" ">
+                        </div>
+                        <div class="">
+                            <div>
+                                <span class="text-2xl font-bold text-green-700">Y.C.M</span>
+                                <p class="text-md font-bold text-sky-900 -mt-1">Youth Concessive Movement</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="about.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="membership.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Membership</a>
-                        <a href="events.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Events</a>
-                        <a href="news.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">News</a>
-                        <a href="gallery.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
-                        <a href="contact.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                        <a href="login.html" class="bg-green text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition">Login</a>
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="membership.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Membership
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="events.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Events
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="news.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            News
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="gallery.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Gallery
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Contact
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="login.html" class="bg-green-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                            Login
+                        </a>
                     </div>
                 </div>
                 
                 <div class="md:hidden">
-                    <button type="button" class="mobile-menu-button bg-deep-navy p-2 rounded-md text-white hover:bg-opacity-80">
+                    <button type="button" class="mobile-menu-button text-gray-700 p-2 rounded-lg hover:bg-gray-100 transition-colors">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -50,160 +102,274 @@
         </div>
         
         <!-- Mobile menu -->
-        <div class="mobile-menu hidden md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white bg-opacity-95">
-                <a href="index.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="about.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="membership.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Membership</a>
-                <a href="events.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Events</a>
-                <a href="news.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">News</a>
-                <a href="gallery.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-                <a href="contact.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                <a href="login.html" class="bg-green text-white block px-3 py-2 rounded-md text-base font-medium">Login</a>
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 transform transition-all duration-300 ease-in-out">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Home</a>
+                <a href="about.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">About</a>
+                <a href="membership.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Membership</a>
+                <a href="events.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Events</a>
+                <a href="news.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">News</a>
+                <a href="gallery.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Gallery</a>
+                <a href="contact.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="login.html" class="bg-green-600 text-white block px-3 py-3 rounded-lg text-base font-medium hover:bg-green-700 transition-colors mx-3 mt-2 text-center">Login</a>
             </div>
         </div>
     </nav>
 
     <!-- Login Section -->
-    <section class="pt-24 pb-16">
-        <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 fade-in-up">
-                <h1 class="text-3xl font-bold text-deep-navy mb-2">Member Login</h1>
-                <p class="text-text-gray">Access your YCM member dashboard and exclusive benefits</p>
-            </div>
-
-            <!-- Login Form -->
-            <div class="glass rounded-2xl p-8 fade-in-up">
-                <form id="loginForm" class="space-y-6">
-                    <!-- Email -->
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-text-gray mb-2">Email Address *</label>
-                        <input type="email" id="email" name="email" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                            placeholder="your.email@example.com">
-                        <div class="error-message hidden" id="email_error"></div>
-                    </div>
-                    
-                    <!-- Password -->
-                    <div>
-                        <label for="password" class="block text-sm font-medium text-text-gray mb-2">Password *</label>
-                        <input type="password" id="password" name="password" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                            placeholder="Enter your password">
-                        <div class="error-message hidden" id="password_error"></div>
-                    </div>
-                    
-                    <!-- Remember & Forgot -->
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="remember" name="remember"
-                                class="h-4 w-4 text-green focus:ring-green border-gray-300 rounded">
-                            <label for="remember" class="ml-2 block text-sm text-text-gray">
-                                Remember me
-                            </label>
+    <section class="pt-24 pb-16 min-h-screen flex items-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Login Form -->
+                <div class="animate-fade-in-left">
+                    <div class="login-card rounded-3xl p-8 md:p-10">
+                        <div class="text-center mb-8">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-2xl mb-4">
+                                <i class="fas fa-user-shield text-green-600 text-2xl"></i>
+                            </div>
+                            <h1 class="text-3xl font-bold font-poppins text-gray-900 mb-2">Member Login</h1>
+                            <p class="text-gray-600">Access your YCM member dashboard and exclusive benefits</p>
                         </div>
-                        <a href="#" id="forgotPasswordLink" class="text-sm text-green hover:text-opacity-80 font-medium">
-                            Forgot password?
-                        </a>
+
+                        <!-- Login Form -->
+                        <form id="loginForm" class="space-y-6">
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                    <i class="fas fa-envelope mr-2 text-green-600"></i>Email Address
+                                </label>
+                                <div class="relative">
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-3 pl-10 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
+                                        placeholder="your.email@example.com">
+                                    <i class="fas fa-at absolute left-3 top-3.5 text-gray-400"></i>
+                                </div>
+                                <div class="error-message hidden text-sm text-red-600 mt-1" id="email_error"></div>
+                            </div>
+                            
+                            <!-- Password -->
+                            <div>
+                                <label for="password" class="block text-sm font-medium text-gray-700 mb-2">
+                                    <i class="fas fa-lock mr-2 text-green-600"></i>Password
+                                </label>
+                                <div class="relative">
+                                    <input type="password" id="password" name="password" required
+                                        class="w-full px-4 py-3 pl-10 pr-10 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
+                                        placeholder="Enter your password">
+                                    <i class="fas fa-key absolute left-3 top-3.5 text-gray-400"></i>
+                                    <button type="button" id="togglePassword" class="absolute right-3 top-3.5 text-gray-400 hover:text-gray-600">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="error-message hidden text-sm text-red-600 mt-1" id="password_error"></div>
+                            </div>
+                            
+                            <!-- Remember & Forgot -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="remember" name="remember"
+                                        class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                                    <label for="remember" class="ml-2 block text-sm text-gray-700">
+                                        Remember me on this device
+                                    </label>
+                                </div>
+                                <a href="#" id="forgotPasswordLink" class="text-sm text-green-600 hover:text-green-700 font-medium transition-colors">
+                                    Forgot password?
+                                </a>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" id="loginBtn"
+                                class="w-full bg-gradient-to-br from-deep-navy via-green to-lime text-white py-3.5 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <span class="flex items-center justify-center">
+                                    <span id="loginText">Sign In to Dashboard</span>
+                                    <div class="spinner hidden ml-2" id="loginSpinner"></div>
+                                </span>
+                            </button>
+                            
+                            <!-- Divider -->
+                            <div class="relative my-6">
+                                <div class="absolute inset-0 flex items-center">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+                                <div class="relative flex justify-center text-sm">
+                                    <span class="px-4 bg-white text-gray-500">Or continue with</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Login (Optional) -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <button type="button" class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <i class="fab fa-google text-red-500 mr-2"></i>
+                                    <span class="text-sm font-medium">Google</span>
+                                </button>
+                                <button type="button" class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <i class="fab fa-facebook text-blue-600 mr-2"></i>
+                                    <span class="text-sm font-medium">Facebook</span>
+                                </button>
+                            </div>
+                            
+                            <!-- Register Link -->
+                            <div class="text-center pt-6 border-t border-gray-200">
+                                <p class="text-gray-600">
+                                    Not a member yet? 
+                                    <a href="membership.html" class="text-green-600 font-semibold hover:text-green-700 transition-colors">
+                                        Register for Membership
+                                    </a>
+                                </p>
+                            </div>
+                            
+                            <!-- Admin Login Link -->
+                            <div class="text-center">
+                                <p class="text-sm text-gray-500">
+                                    <a href="../admin/login.php" class="text-gray-600 hover:text-green-600 transition-colors">
+                                        <i class="fas fa-user-cog mr-1"></i>Administrator Login
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
                     </div>
-                    
-                    <!-- Submit Button -->
-                    <button type="submit" id="loginBtn"
-                        class="w-full bg-green text-white py-3 px-4 rounded-lg font-semibold hover:bg-opacity-90 transition focus:ring-2 focus:ring-green focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed">
-                        <span class="flex items-center justify-center">
-                            <span id="loginText">Login to Account</span>
-                            <div class="spinner hidden ml-2" id="loginSpinner"></div>
-                        </span>
-                    </button>
-                    
-                    <!-- Register Link -->
-                    <div class="text-center pt-4 border-t">
-                        <p class="text-text-gray">
-                            Not a member yet? 
-                            <a href="membership.html" class="text-green font-semibold hover:text-opacity-80">Register here</a>
-                        </p>
-                    </div>
-                </form>
-                
-                <!-- Admin Login Link -->
-                <div class="mt-6 pt-6 border-t border-gray-200 text-center">
-                    <p class="text-sm text-text-gray">
-                        Are you an administrator? 
-                        <a href="../admin/login.php" class="text-deep-navy font-semibold hover:text-opacity-80">Login to Admin Panel</a>
-                    </p>
                 </div>
-            </div>
-            
-            <!-- Login Benefits -->
-            <div class="mt-8 glass rounded-2xl p-6 fade-in-up">
-                <h3 class="text-lg font-bold text-deep-navy mb-4 text-center">Member Benefits</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span class="text-sm text-text-gray">Access to digital membership card</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span class="text-sm text-text-gray">Register for events and workshops</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span class="text-sm text-text-gray">Download member resources and documents</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span class="text-sm text-text-gray">Receive member-only announcements</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span class="text-sm text-text-gray">Update your profile information</span>
-                    </li>
-                </ul>
+                
+                <!-- Right Column - Member Benefits -->
+                <div class="animate-fade-in-right">
+                    <div class="bg-gradient-to-br from-deep-navy via-green to-lime rounded-3xl p-8 md:p-10 text-white shadow-2xl">
+                        <div class="text-center mb-8">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-4 backdrop-blur-sm">
+                                <i class="fas fa-crown text-2xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold font-poppins mb-4">Member Exclusive Benefits</h2>
+                            <p class="opacity-90">Unlock premium features as a YCM member</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                                        <i class="fas fa-id-card text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold mb-1">Digital Membership Card</h4>
+                                    <p class="text-sm opacity-80">Access and download your official YCM digital membership card with QR verification.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                                        <i class="fas fa-calendar-check text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold mb-1">Event Registration & Management</h4>
+                                    <p class="text-sm opacity-80">Register for events, track attendance, and access event materials.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                                        <i class="fas fa-file-download text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold mb-1">Exclusive Resources</h4>
+                                    <p class="text-sm opacity-80">Download member-only resources, training materials, and publications.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                                        <i class="fas fa-bell text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold mb-1">Personalized Updates</h4>
+                                    <p class="text-sm opacity-80">Receive customized notifications based on your interests and location.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start group">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                                        <i class="fas fa-chart-line text-sm"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold mb-1">Activity Dashboard</h4>
+                                    <p class="text-sm opacity-80">Track your participation, contributions, and progress within YCM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Membership Stats -->
+                        <div class="mt-10 pt-8 border-t border-white/20">
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl font-bold">5K+</div>
+                                    <div class="text-xs opacity-80">Active Members</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold">36</div>
+                                    <div class="text-xs opacity-80">States Covered</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold">200+</div>
+                                    <div class="text-xs opacity-80">Events Hosted</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Forgot Password Modal -->
-    <div id="forgotPasswordModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl p-8 max-w-md w-full">
+    <div id="forgotPasswordModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full transform transition-all duration-300 scale-95">
             <div class="flex justify-between items-center mb-6">
-                <h3 class="text-xl font-bold text-deep-navy">Reset Password</h3>
-                <button type="button" id="closeForgotModal" class="text-gray-400 hover:text-gray-500">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center mr-3">
+                        <i class="fas fa-key text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-gray-900">Reset Password</h3>
+                </div>
+                <button type="button" id="closeForgotModal" class="text-gray-400 hover:text-gray-500 transition-colors">
+                    <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
             
             <form id="forgotPasswordForm" class="space-y-4">
-                <p class="text-text-gray text-sm mb-4">
+                <p class="text-gray-600 text-sm mb-4">
                     Enter your email address and we'll send you instructions to reset your password.
                 </p>
                 
                 <div>
-                    <label for="reset_email" class="block text-sm font-medium text-text-gray mb-2">Email Address *</label>
-                    <input type="email" id="reset_email" name="email" required
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                        placeholder="your.email@example.com">
-                    <div class="error-message hidden" id="reset_email_error"></div>
+                    <label for="reset_email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                    <div class="relative">
+                        <input type="email" id="reset_email" name="email" required
+                            class="w-full px-4 py-3 pl-10 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
+                            placeholder="your.email@example.com">
+                        <i class="fas fa-envelope absolute left-3 top-3.5 text-gray-400"></i>
+                    </div>
+                    <div class="error-message hidden text-sm text-red-600 mt-1" id="reset_email_error"></div>
                 </div>
                 
                 <div class="flex space-x-4">
-                    <button type="button" id="cancelForgot" class="flex-1 border border-gray-300 text-text-gray py-3 px-4 rounded-lg font-medium hover:bg-gray-50 transition">
+                    <button type="button" id="cancelForgot" class="flex-1 border border-gray-300 text-gray-700 py-3 px-4 rounded-xl font-medium hover:bg-gray-50 transition-all duration-200">
                         Cancel
                     </button>
                     <button type="submit" id="sendResetBtn"
-                        class="flex-1 bg-green text-white py-3 px-4 rounded-lg font-medium hover:bg-opacity-90 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                        class="flex-1 bg-gradient-to-r from-green-600 to-emerald-500 text-white py-3 px-4 rounded-xl font-medium hover:opacity-90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg">
                         <span class="flex items-center justify-center">
                             <span id="sendResetText">Send Reset Link</span>
                             <div class="spinner hidden ml-2" id="sendResetSpinner"></div>
@@ -213,17 +379,15 @@
             </form>
             
             <!-- Success Message -->
-            <div id="resetSuccessMessage" class="hidden text-center py-4">
-                <div class="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
+            <div id="resetSuccessMessage" class="hidden text-center py-6">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-green-600 text-2xl"></i>
                 </div>
-                <h4 class="text-lg font-bold text-deep-navy mb-2">Reset Link Sent!</h4>
-                <p class="text-text-gray text-sm mb-4">
+                <h4 class="text-lg font-bold text-gray-900 mb-2">Reset Link Sent!</h4>
+                <p class="text-gray-600 text-sm mb-6">
                     We've sent password reset instructions to your email address. Please check your inbox (and spam folder).
                 </p>
-                <button type="button" id="closeSuccess" class="bg-green text-white px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                <button type="button" id="closeSuccess" class="bg-gradient-to-r from-green-600 to-emerald-500 text-white px-8 py-2.5 rounded-xl font-medium hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg">
                     Close
                 </button>
             </div>
@@ -231,73 +395,115 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-deep-navy text-white pt-12 pb-8">
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <div>
-                    <div class="flex items-center mb-4">
-                        <img src="../assets/logo-placeholder.svg" alt="YCM Logo" class="h-8 w-auto">
-                        <span class="ml-2 text-xl font-bold">YCM</span>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden">
+                            <img src="./assets/images/logo-real.png" alt="YCM Logo" class="h-full w-full object-contain">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold font-poppins text-white leading-tight">Y.C.M</span>
+                            <span class="text-sm font-semibold font-poppins text-gray-300 -mt-1">Youth Concessive Movement</span>
+                        </div>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        Empowering Nigerian youth through civic engagement, leadership development, and community service.
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Empowering Nigerian youth through civic engagement, leadership development, and community service since 2020.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-300 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-facebook text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-300 hover:text-white">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.042-3.441.219-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.017z"/></svg>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-linkedin text-xl"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
-                        <li><a href="membership.html" class="text-gray-300 hover:text-white transition">Membership</a></li>
-                        <li><a href="events.html" class="text-gray-300 hover:text-white transition">Events</a></li>
-                        <li><a href="news.html" class="text-gray-300 hover:text-white transition">News</a></li>
-                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition">Gallery</a></li>
+                    <h3 class="text-lg font-semibold font-poppins mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="membership.html" class="text-gray-300 hover:text-white transition-colors">Membership</a></li>
+                        <li><a href="events.html" class="text-gray-300 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News</a></li>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
-                    <ul class="space-y-2">
-                        <li><a href="constitution.html" class="text-gray-300 hover:text-white transition">Constitution</a></li>
-                        <li><a href="privacy.html" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
+                    <h3 class="text-lg font-semibold font-poppins mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="constitution.html" class="text-gray-300 hover:text-white transition-colors">Constitution</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
-                    <div class="space-y-2 text-gray-300">
-                        <p>123 Youth Avenue</p>
-                        <p>Central District, Abuja</p>
-                        <p>Nigeria</p>
-                        <p>info@ycm.ng</p>
-                        <p>+234 800 123 4567</p>
+                    <h3 class="text-lg font-semibold font-poppins mb-6">Contact Info</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-green-400"></i>
+                            123 Youth Avenue, Central District, Abuja
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-green-400"></i>
+                            info@ycm.ng
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-green-400"></i>
+                            +234 800 123 4567
+                        </p>
                     </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Youth Concessive Movement. All rights reserved.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p class="font-inter">&copy; 2025 Youth Concessive Movement. All rights reserved. Empowering Nigerian Youth for a Better Tomorrow.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition-all duration-200 transform hover:-translate-y-1 hidden">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Notification -->
+    <div id="successNotification" class="fixed top-6 right-6 bg-green-500 text-white px-6 py-3 rounded-xl shadow-xl z-50 transform transition-all duration-300 translate-x-full hidden">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle mr-3"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
     <script>
-    // Login functionality
-    document.addEventListener('DOMContentLoaded', function() {
+        // Login functionality
+        document.addEventListener('DOMContentLoaded', function() {
+        
+        // Password visibility toggle
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+        
+        if (togglePassword && passwordInput) {
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                this.innerHTML = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+            });
+        }
+        
+        // Modal elements
         const loginForm = document.getElementById('loginForm');
         const forgotPasswordLink = document.getElementById('forgotPasswordLink');
         const forgotPasswordModal = document.getElementById('forgotPasswordModal');
@@ -313,15 +519,23 @@
                 e.preventDefault();
                 forgotPasswordModal.classList.remove('hidden');
                 forgotPasswordModal.classList.add('flex');
+                setTimeout(() => {
+                    forgotPasswordModal.querySelector('.scale-95').classList.remove('scale-95');
+                }, 10);
             });
         }
         
         // Close modal functions
         function closeModal() {
-            forgotPasswordModal.classList.add('hidden');
-            forgotPasswordModal.classList.remove('flex');
-            resetSuccessMessage.classList.add('hidden');
-            forgotPasswordForm.classList.remove('hidden');
+            const modalContent = forgotPasswordModal.querySelector('.scale-95');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                forgotPasswordModal.classList.add('hidden');
+                forgotPasswordModal.classList.remove('flex');
+                resetSuccessMessage.classList.add('hidden');
+                forgotPasswordForm.classList.remove('hidden');
+                forgotPasswordForm.reset();
+            }, 300);
         }
         
         if (closeForgotModal) closeForgotModal.addEventListener('click', closeModal);
@@ -334,6 +548,38 @@
                 closeModal();
             }
         });
+        
+        // Show notification
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('successNotification');
+            const messageEl = document.getElementById('notificationMessage');
+            
+            messageEl.textContent = message;
+            
+            if (type === 'error') {
+                notification.classList.remove('bg-green-500');
+                notification.classList.add('bg-red-500');
+            } else {
+                notification.classList.remove('bg-red-500');
+                notification.classList.add('bg-green-500');
+            }
+            
+            notification.classList.remove('hidden', 'translate-x-full');
+            notification.classList.add('translate-x-0');
+            
+            setTimeout(() => {
+                notification.classList.remove('translate-x-0');
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    notification.classList.add('hidden');
+                }, 300);
+            }, 3000);
+        }
+        
+        // Form validation helper
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
         
         // Login form submission
         if (loginForm) {
@@ -350,50 +596,64 @@
                 document.querySelectorAll('.error-message').forEach(el => {
                     el.classList.add('hidden');
                 });
-                document.querySelectorAll('.error').forEach(el => {
-                    el.classList.remove('error');
+                document.querySelectorAll('input').forEach(el => {
+                    el.classList.remove('border-red-500');
+                    el.classList.add('border-gray-300');
                 });
                 
-                let hasError = false;
+                let isValid = true;
                 
                 // Validate email
                 if (!email) {
                     document.getElementById('email_error').textContent = 'Email is required';
                     document.getElementById('email_error').classList.remove('hidden');
-                    document.getElementById('email').classList.add('error');
-                    hasError = true;
-                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    document.getElementById('email').classList.add('border-red-500');
+                    isValid = false;
+                } else if (!validateEmail(email)) {
                     document.getElementById('email_error').textContent = 'Please enter a valid email address';
                     document.getElementById('email_error').classList.remove('hidden');
-                    document.getElementById('email').classList.add('error');
-                    hasError = true;
+                    document.getElementById('email').classList.add('border-red-500');
+                    isValid = false;
                 }
                 
                 // Validate password
                 if (!password) {
                     document.getElementById('password_error').textContent = 'Password is required';
                     document.getElementById('password_error').classList.remove('hidden');
-                    document.getElementById('password').classList.add('error');
-                    hasError = true;
+                    document.getElementById('password').classList.add('border-red-500');
+                    isValid = false;
+                } else if (password.length < 6) {
+                    document.getElementById('password_error').textContent = 'Password must be at least 6 characters';
+                    document.getElementById('password_error').classList.remove('hidden');
+                    document.getElementById('password').classList.add('border-red-500');
+                    isValid = false;
                 }
                 
-                if (hasError) return;
+                if (!isValid) return;
                 
                 // Show loading state
                 loginBtn.disabled = true;
-                loginText.textContent = 'Logging in...';
+                loginText.textContent = 'Authenticating...';
                 loginSpinner.classList.remove('hidden');
                 
-                // Submit login (AJAX would go here)
-                // For now, simulate login
+                // Simulate API call (replace with actual API call in production)
                 setTimeout(() => {
-                    // In production, this would be an AJAX call to api/login.php
-                    alert('Login functionality would connect to backend API. Email: ' + email);
+                    // For demo purposes - successful login
+                    showNotification('Login successful! Redirecting to dashboard...');
                     
                     // Reset form
                     loginBtn.disabled = false;
-                    loginText.textContent = 'Login to Account';
+                    loginText.textContent = 'Sign In to Dashboard';
                     loginSpinner.classList.add('hidden');
+                    
+                    // In production, redirect to dashboard
+                    // window.location.href = 'dashboard.html';
+                    
+                    // For demo, show success
+                    setTimeout(() => {
+                        alert('In production, this would redirect to the member dashboard.\n\nDemo login successful for: ' + email);
+                    }, 1000);
+                    
                 }, 1500);
             });
         }
@@ -410,20 +670,21 @@
                 
                 // Clear previous errors
                 document.getElementById('reset_email_error').classList.add('hidden');
-                document.getElementById('reset_email').classList.remove('error');
+                document.getElementById('reset_email').classList.remove('border-red-500');
+                document.getElementById('reset_email').classList.add('border-gray-300');
                 
                 // Validate email
                 if (!email) {
                     document.getElementById('reset_email_error').textContent = 'Email is required';
                     document.getElementById('reset_email_error').classList.remove('hidden');
-                    document.getElementById('reset_email').classList.add('error');
+                    document.getElementById('reset_email').classList.add('border-red-500');
                     return;
                 }
                 
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                if (!validateEmail(email)) {
                     document.getElementById('reset_email_error').textContent = 'Please enter a valid email address';
                     document.getElementById('reset_email_error').classList.remove('hidden');
-                    document.getElementById('reset_email').classList.add('error');
+                    document.getElementById('reset_email').classList.add('border-red-500');
                     return;
                 }
                 
@@ -442,9 +703,37 @@
                     sendResetBtn.disabled = false;
                     sendResetText.textContent = 'Send Reset Link';
                     sendResetSpinner.classList.add('hidden');
+                    
+                    // Show notification
+                    setTimeout(() => {
+                        showNotification('Password reset link sent to ' + email);
+                    }, 100);
                 }, 1500);
             });
         }
+        
+        // Social login buttons
+        document.querySelectorAll('button[type="button"]').forEach(button => {
+            if (button.textContent.includes('Google') || button.textContent.includes('Facebook')) {
+                button.addEventListener('click', function() {
+                    const platform = this.textContent.includes('Google') ? 'Google' : 'Facebook';
+                    showNotification(`${platform} login would be implemented in production`, 'info');
+                });
+            }
+        });
+        
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.animate-fade-in-left, .animate-fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
     });
     </script>
 </body>

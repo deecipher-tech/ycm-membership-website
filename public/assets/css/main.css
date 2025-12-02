@@ -685,6 +685,10 @@ video {
   left: 50%;
 }
 
+.left-3{
+  left: 0.75rem;
+}
+
 .left-4{
   left: 1rem;
 }
@@ -794,6 +798,10 @@ video {
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-12{
@@ -1160,6 +1168,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-90{
   --tw-scale-x: .9;
   --tw-scale-y: .9;
@@ -1312,6 +1325,14 @@ video {
   resize: none;
 }
 
+.list-decimal{
+  list-style-type: decimal;
+}
+
+.list-disc{
+  list-style-type: disc;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1416,6 +1437,12 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1502,6 +1529,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-l-4{
+  border-left-width: 4px;
+}
+
 .border-t{
   border-top-width: 1px;
 }
@@ -1515,9 +1546,19 @@ video {
   border-color: rgb(253 230 138 / var(--tw-border-opacity, 1));
 }
 
+.border-amber-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity, 1));
+}
+
 .border-blue-200{
   --tw-border-opacity: 1;
   border-color: rgb(191 219 254 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
 }
 
 .border-gold-500{
@@ -2206,20 +2247,40 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
 }
 
 .pl-12{
   padding-left: 3rem;
 }
 
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
 
+.pl-5{
+  padding-left: 1.25rem;
+}
+
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .pt-0{
@@ -2557,6 +2618,10 @@ video {
   color: rgb(202 138 4 / var(--tw-text-opacity, 1));
 }
 
+.underline{
+  text-decoration-line: underline;
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2570,6 +2635,16 @@ video {
 .placeholder-gray-400::placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
+}
+
+.placeholder-gray-500::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity, 1));
+}
+
+.placeholder-gray-500::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity, 1));
 }
 
 .opacity-0{
@@ -3009,6 +3084,11 @@ a:focus {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-green-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-green-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
@@ -3144,6 +3224,10 @@ a:focus {
   text-decoration-line: underline;
 }
 
+.hover\:no-underline:hover{
+  text-decoration-line: none;
+}
+
 .hover\:shadow-2xl:hover{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -3211,6 +3295,14 @@ a:focus {
   --tw-ring-offset-color: #16a34a;
 }
 
+.disabled\:cursor-not-allowed:disabled{
+  cursor: not-allowed;
+}
+
+.disabled\:opacity-50:disabled{
+  opacity: 0.5;
+}
+
 .group:hover .group-hover\:w-full{
   width: 100%;
 }
@@ -3270,6 +3362,10 @@ a:focus {
 }
 
 @media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:flex-row{
     flex-direction: row;
   }

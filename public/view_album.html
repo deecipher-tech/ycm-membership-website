@@ -1439,26 +1439,6 @@
                 viewCountEl.textContent = viewCount.toLocaleString() + ' Views';
             }, 1000);
 
-            // Back to Top Button
-            const backToTopBtn = document.getElementById('back-to-top');
-            
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTopBtn.classList.remove('hidden');
-                    backToTopBtn.classList.add('flex');
-                } else {
-                    backToTopBtn.classList.remove('flex');
-                    backToTopBtn.classList.add('hidden');
-                }
-            });
-            
-            backToTopBtn.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-
             // View Similar Albums
             document.getElementById('viewMoreAlbums').addEventListener('click', function() {
                 this.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Loading...';
@@ -1497,19 +1477,6 @@
                         document.body.removeChild(notification);
                     }, 300);
                 }, 3000);
-            }
-
-            // Mobile menu toggle
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const mobileMenu = document.querySelector('.mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                    mobileMenu.classList.toggle('transform');
-                    mobileMenu.classList.toggle('opacity-0');
-                    mobileMenu.classList.toggle('opacity-100');
-                });
             }
 
             // Photo heart buttons in grid

@@ -1,165 +1,632 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-inter">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membership Registration - Youth Concessive Movement</title>
     <meta name="description" content="Join YCM as a member. Register now to be part of Nigeria's leading youth empowerment organization.">
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta property="og:title" content="Become a YCM Member">
+    <meta property="og:description" content="Join thousands of young Nigerians making a difference. Free registration for Nigerian youth aged 16-35.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ycm.ng/membership.html">
+    <meta property="og:image" content="https://ycm.ng/assets/membership-hero.jpg">
+    <!-- Font Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="min-h-screen bg-gradient-to-b from-bg-top to-bg-bottom">
-    <!-- Navigation (same as index.html) -->
-    <nav class="glass fixed top-0 left-0 right-0 z-50">
-        <!-- Navigation content same as index.html -->
+<body class="min-h-screen bg-gradient-to-b from-gray-50 to-white antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center ">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center group space-x-1">
+                        <div class="w-20 h-20 rounded-xl flex items-center justify-center">
+                            <img src="./assets/images/logooo.png" alt="" class="rounded-lg">
+                        </div>
+                        <div class="">
+                            <div>
+                                <span class="text-2xl font-bold text-green-700">Y.C.M</span>
+                                <p class="text-md font-bold text-sky-900 -mt-1">Youth Concessive Movement</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="membership.html" class="text-gray-700 text-green-600 font-medium transition-colors duration-200 relative group">
+                            Membership
+                            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600"></span>
+                        </a>
+                        <a href="events.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Events
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="news.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            News
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="gallery.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Gallery
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group">
+                            Contact
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="login.html" class="bg-green-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                            Login
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button text-gray-700 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 transform transition-all duration-300 ease-in-out">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Home</a>
+                <a href="about.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">About</a>
+                <a href="membership.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Membership</a>
+                <a href="events.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Events</a>
+                <a href="news.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">News</a>
+                <a href="gallery.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Gallery</a>
+                <a href="contact.html" class="text-gray-700 block px-3 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="login.html" class="bg-green-600 text-white block px-3 py-3 rounded-lg text-base font-medium hover:bg-green-700 transition-colors mx-3 mt-2 text-center">Login</a>
+            </div>
+        </div>
     </nav>
 
-    <main class="pt-20 pb-16">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center mb-12 fade-in-up">
-                <h1 class="text-4xl font-bold text-deep-navy mb-4">Become a YCM Member</h1>
-                <p class="text-xl text-text-gray max-w-2xl mx-auto">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-deep-navy via-green to-lime relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl animate-blob"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/5 rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-2000"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center text-white">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium mb-6 animate-fade-in-down">
+                    <i class="fas fa-users mr-2"></i>
+                    Join Our Growing Community
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold font-poppins mb-6 animate-fade-in-up">
+                    Become a YCM Member
+                </h1>
+                <p class="text-xl max-w-3xl mx-auto opacity-95 animate-fade-in-up">
                     Join thousands of young Nigerians making a difference in their communities. Registration is free and open to all Nigerian youth aged 16-35.
                 </p>
+                <div class="mt-10 animate-fade-in-up">
+                    <a href="#registration-form" class="inline-flex items-center bg-white text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <i class="fas fa-user-plus mr-2"></i>
+                        Start Registration
+                    </a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Registration Form -->
-            <div class="glass rounded-2xl p-8 fade-in-up">
-                <form id="registrationForm" enctype="multipart/form-data" class="space-y-8">
-                    <!-- Personal Information -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-deep-navy mb-6">Personal Information</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="full_name" class="block text-sm font-medium text-text-gray mb-2">Full Name *</label>
-                                <input type="text" id="full_name" name="full_name" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="Enter your full name as it appears on your ID">
-                                <div class="error-message hidden" id="full_name_error"></div>
+    <!-- Membership Benefits -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins text-gray-900 mb-4">Why Join YCM?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the exclusive benefits of being a YCM member
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-b from-gray-50 to-white shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 animate-fade-in-up">
+                    <div class="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors">
+                        <i class="fas fa-network-wired text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-gray-900 mb-4">National Network</h3>
+                    <p class="text-gray-600">
+                        Connect with youth across all 36 states and build lasting relationships
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-b from-gray-50 to-white shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 animate-fade-in-up">
+                    <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                        <i class="fas fa-graduation-cap text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-gray-900 mb-4">Free Training</h3>
+                    <p class="text-gray-600">
+                        Access exclusive workshops, leadership programs, and skill development
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-b from-gray-50 to-white shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 animate-fade-in-up">
+                    <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors">
+                        <i class="fas fa-briefcase text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-gray-900 mb-4">Career Opportunities</h3>
+                    <p class="text-gray-600">
+                        Exclusive access to internships, jobs, and mentorship programs
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-b from-gray-50 to-white shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100 animate-fade-in-up">
+                    <div class="w-20 h-20 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-200 transition-colors">
+                        <i class="fas fa-star text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-gray-900 mb-4">Leadership Roles</h3>
+                    <p class="text-gray-600">
+                        Opportunity to serve in leadership positions and represent your community
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility & Requirements -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Eligibility -->
+                <div class="animate-fade-in-up">
+                    <div class="glass p-8 rounded-2xl shadow-lg">
+                        <div class="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-600 text-sm font-semibold mb-6">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Eligibility Requirements
+                        </div>
+                        <h3 class="text-2xl font-bold font-poppins text-gray-900 mb-6">Who Can Join?</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Age Requirement</h4>
+                                    <p class="text-gray-600">Must be between 16-35 years old</p>
+                                </div>
                             </div>
                             
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-text-gray mb-2">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="+2348012345678 or 08012345678">
-                                <div class="text-sm text-text-gray mt-1">Enter in Nigerian format (+234... or 0...)</div>
-                                <div class="error-message hidden" id="phone_error"></div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-passport text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Nationality</h4>
+                                    <p class="text-gray-600">Must be a Nigerian citizen</p>
+                                </div>
                             </div>
                             
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-text-gray mb-2">Email Address *</label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="your.email@example.com">
-                                <div class="error-message hidden" id="email_error"></div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Residency</h4>
+                                    <p class="text-gray-600">Must reside in Nigeria or be willing to participate in Nigerian activities</p>
+                                </div>
                             </div>
                             
-                            <div>
-                                <label for="dob" class="block text-sm font-medium text-text-gray mb-2">Date of Birth *</label>
-                                <input type="date" id="dob" name="dob" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
-                                <div class="error-message hidden" id="dob_error"></div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-handshake text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Commitment</h4>
+                                    <p class="text-gray-600">Willing to abide by YCM constitution and values</p>
+                                </div>
                             </div>
                             
-                            <div>
-                                <label for="gender" class="block text-sm font-medium text-text-gray mb-2">Gender *</label>
-                                <select id="gender" name="gender" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
-                                    <option value="">Select Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="error-message hidden" id="gender_error"></div>
-                            </div>
-                            
-                            <div>
-                                <label for="occupation" class="block text-sm font-medium text-text-gray mb-2">Occupation *</label>
-                                <input type="text" id="occupation" name="occupation" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="e.g., Student, Software Developer, Teacher">
-                                <div class="error-message hidden" id="occupation_error"></div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-file-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Documents</h4>
+                                    <p class="text-gray-600">Valid means of identification required</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Location Information -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-deep-navy mb-6">Location Information</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="state_id" class="block text-sm font-medium text-text-gray mb-2">State of Origin *</label>
-                                <select id="state_id" name="state_id" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
-                                    <option value="">Select State</option>
-                                    <!-- States will be populated by JavaScript -->
-                                </select>
-                                <div class="error-message hidden" id="state_id_error"></div>
+                </div>
+                
+                <!-- Required Documents -->
+                <div class="animate-fade-in-up">
+                    <div class="glass p-8 rounded-2xl shadow-lg">
+                        <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-6">
+                            <i class="fas fa-file-upload mr-2"></i>
+                            Required Documents
+                        </div>
+                        <h3 class="text-2xl font-bold font-poppins text-gray-900 mb-6">Prepare These Documents</h3>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-camera text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Passport Photograph</h4>
+                                    <p class="text-sm text-gray-600">Recent passport photo on white background (JPEG/PNG, max 2.5MB)</p>
+                                </div>
                             </div>
                             
-                            <div>
-                                <label for="lga_id" class="block text-sm font-medium text-text-gray mb-2">Local Government Area *</label>
-                                <select id="lga_id" name="lga_id" required disabled
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
-                                    <option value="">Select LGA</option>
-                                    <!-- LGAs will be populated by JavaScript -->
-                                </select>
-                                <div class="spinner hidden mt-2" id="lga_loading"></div>
-                                <div class="error-message hidden" id="lga_id_error"></div>
+                            <div class="flex items-center p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-id-card text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Voter's Card (Front)</h4>
+                                    <p class="text-sm text-gray-600">Clear photo of front side of PVC (JPEG/PNG, max 2.5MB)</p>
+                                </div>
                             </div>
                             
-                            <div class="md:col-span-2">
-                                <label for="residential_address" class="block text-sm font-medium text-text-gray mb-2">Residential Address *</label>
-                                <textarea id="residential_address" name="residential_address" required rows="3"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="Enter your complete residential address"></textarea>
-                                <div class="error-message hidden" id="residential_address_error"></div>
+                            <div class="flex items-center p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-id-card-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Voter's Card (Back)</h4>
+                                    <p class="text-sm text-gray-600">Clear photo of back side of PVC (JPEG/PNG, max 2.5MB)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Important Notes -->
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                            <div class="flex">
+                                <i class="fas fa-exclamation-circle text-amber-500 mr-3 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-amber-800 mb-2">Important Notes:</h4>
+                                    <ul class="text-sm text-amber-700 space-y-1">
+                                        <li>• All documents must be clear and legible</li>
+                                        <li>• File size must not exceed 2.5MB per document</li>
+                                        <li>• Only JPEG and PNG formats are accepted</li>
+                                        <li>• Ensure all information is visible and not blurred</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Document Uploads -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-deep-navy mb-6">Required Documents</h3>
-                        <p class="text-text-gray mb-6">Please upload clear photos of the following documents. All files must be in JPG or PNG format and less than 2.5MB each.</p>
+    <!-- Registration Form -->
+    <section id="registration-form" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins text-gray-900 mb-4">Membership Registration</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Complete the form below to join YCM. Fields marked with <span class="text-red-500">*</span> are required.
+                </p>
+            </div>
+            
+            <!-- Registration Progress -->
+            <div class="mb-8 animate-fade-in-up">
+                <div class="flex items-center justify-between relative">
+                    <div class="absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
+                    
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mb-2">
+                            1
+                        </div>
+                        <span class="text-sm font-semibold text-gray-700">Personal Info</span>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold mb-2">
+                            2
+                        </div>
+                        <span class="text-sm text-gray-500">Documents</span>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold mb-2">
+                            3
+                        </div>
+                        <span class="text-sm text-gray-500">Review</span>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold mb-2">
+                            4
+                        </div>
+                        <span class="text-sm text-gray-500">Submit</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Multi-step Form -->
+            <div class="glass rounded-2xl p-8 shadow-lg animate-fade-in-up">
+                <form id="membershipForm" class="space-y-8">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step active" data-step="1">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold font-poppins text-gray-900">Personal Information</h3>
+                                <p class="text-gray-600">Tell us about yourself</p>
+                            </div>
+                        </div>
                         
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <label for="passport_photo" class="block text-sm font-medium text-text-gray mb-2">Passport Photograph *</label>
-                                <input type="file" id="passport_photo" name="passport_photo" accept=".jpg,.jpeg,.png" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green file:text-white hover:file:bg-opacity-80">
-                                <div class="text-sm text-text-gray mt-1">Recent passport photo on white background</div>
-                                <div class="error-message hidden" id="passport_photo_error"></div>
+                                <label for="fullName" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Full Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="fullName" name="fullName" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                                    placeholder="Enter your full name">
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="fullNameError"></div>
                             </div>
                             
                             <div>
-                                <label for="voters_card_front" class="block text-sm font-medium text-text-gray mb-2">Voter's Card (Front) *</label>
-                                <input type="file" id="voters_card_front" name="voters_card_front" accept=".jpg,.jpeg,.png" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green file:text-white hover:file:bg-opacity-80">
-                                <div class="text-sm text-text-gray mt-1">Clear photo of the front side</div>
-                                <div class="error-message hidden" id="voters_card_front_error"></div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                                    placeholder="your.email@example.com">
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="emailError"></div>
                             </div>
                             
                             <div>
-                                <label for="voters_card_back" class="block text-sm font-medium text-text-gray mb-2">Voter's Card (Back) *</label>
-                                <input type="file" id="voters_card_back" name="voters_card_back" accept=".jpg,.jpeg,.png" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green file:text-white hover:file:bg-opacity-80">
-                                <div class="text-sm text-text-gray mt-1">Clear photo of the back side</div>
-                                <div class="error-message hidden" id="voters_card_back_error"></div>
+                                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Phone Number <span class="text-red-500">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                                    placeholder="08012345678">
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="phoneError"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="dob" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Date of Birth <span class="text-red-500">*</span>
+                                </label>
+                                <input type="date" id="dob" name="dob" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all">
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="dobError"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="gender" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Gender <span class="text-red-500">*</span>
+                                </label>
+                                <select id="gender" name="gender" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="genderError"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="occupation" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Occupation <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="occupation" name="occupation" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                                    placeholder="e.g., Student, Developer, Teacher">
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="occupationError"></div>
                             </div>
                         </div>
+                        
+                        <div class="mt-8">
+                            <label for="address" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Residential Address <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="address" name="address" rows="3" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+                                placeholder="Enter your complete residential address"></textarea>
+                            <div class="error-message hidden mt-2 text-sm text-red-600" id="addressError"></div>
+                        </div>
+                        
+                        <div class="flex justify-end mt-8 pt-6 border-t">
+                            <button type="button" class="next-step bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                                Next: Location Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
                     </div>
-
-                    <!-- Account Security -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-deep-navy mb-6">Account Security</h3>
+                    
+                    <!-- Step 2: Location Information -->
+                    <div class="form-step hidden" data-step="2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold font-poppins text-gray-900">Location Information</h3>
+                                <p class="text-gray-600">Tell us where you're from</p>
+                            </div>
+                        </div>
+                        
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <label for="password" class="block text-sm font-medium text-text-gray mb-2">Password *</label>
-                                <input type="password" id="password" name="password" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="Create a strong password">
+                                <label for="state" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    State of Origin <span class="text-red-500">*</span>
+                                </label>
+                                <select id="state" name="state" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all">
+                                    <option value="">Select State</option>
+                                    <option value="abia">Abia</option>
+                                    <option value="adamawa">Adamawa</option>
+                                    <option value="akwa-ibom">Akwa Ibom</option>
+                                    <option value="anambra">Anambra</option>
+                                    <option value="bauchi">Bauchi</option>
+                                    <option value="bayelsa">Bayelsa</option>
+                                    <option value="benue">Benue</option>
+                                    <option value="borno">Borno</option>
+                                    <option value="cross-river">Cross River</option>
+                                    <option value="delta">Delta</option>
+                                    <option value="ebonyi">Ebonyi</option>
+                                    <option value="edo">Edo</option>
+                                    <option value="ekiti">Ekiti</option>
+                                    <option value="enugu">Enugu</option>
+                                    <option value="gombe">Gombe</option>
+                                    <option value="imo">Imo</option>
+                                    <option value="jigawa">Jigawa</option>
+                                    <option value="kaduna">Kaduna</option>
+                                    <option value="kano">Kano</option>
+                                    <option value="katsina">Katsina</option>
+                                    <option value="kebbi">Kebbi</option>
+                                    <option value="kogi">Kogi</option>
+                                    <option value="kwara">Kwara</option>
+                                    <option value="lagos">Lagos</option>
+                                    <option value="nasarawa">Nasarawa</option>
+                                    <option value="niger">Niger</option>
+                                    <option value="ogun">Ogun</option>
+                                    <option value="ondo">Ondo</option>
+                                    <option value="osun">Osun</option>
+                                    <option value="oyo">Oyo</option>
+                                    <option value="plateau">Plateau</option>
+                                    <option value="rivers">Rivers</option>
+                                    <option value="sokoto">Sokoto</option>
+                                    <option value="taraba">Taraba</option>
+                                    <option value="yobe">Yobe</option>
+                                    <option value="zamfara">Zamfara</option>
+                                    <option value="fct">FCT, Abuja</option>
+                                </select>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="stateError"></div>
+                            </div>
+                            
+                            <div>
+                                <label for="lga" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Local Government Area <span class="text-red-500">*</span>
+                                </label>
+                                <select id="lga" name="lga" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all">
+                                    <option value="">Select LGA</option>
+                                    <!-- LGAs will be populated based on state selection -->
+                                </select>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="lgaError"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between mt-8 pt-6 border-t">
+                            <button type="button" class="prev-step text-gray-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-200">
+                                <i class="fas fa-arrow-left mr-2"></i> Back
+                            </button>
+                            <button type="button" class="next-step bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                                Next: Documents <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Document Upload -->
+                    <div class="form-step hidden" data-step="3">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-file-upload text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold font-poppins text-gray-900">Document Upload</h3>
+                                <p class="text-gray-600">Upload required identification documents</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Passport Photo -->
+                            <div class="md:col-span-2 lg:col-span-3">
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">Passport Photograph</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-green-500 transition-colors cursor-pointer" id="passportUpload">
+                                    <input type="file" id="passportPhoto" name="passportPhoto" accept=".jpg,.jpeg,.png" class="hidden">
+                                    <div id="passportPreview">
+                                        <i class="fas fa-camera text-gray-400 text-4xl mb-4"></i>
+                                        <p class="text-gray-600 font-medium">Click to upload passport photo</p>
+                                        <p class="text-sm text-gray-500 mt-2">JPG or PNG, max 2.5MB</p>
+                                    </div>
+                                </div>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="passportError"></div>
+                            </div>
+                            
+                            <!-- Voter's Card Front -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">Voter's Card (Front)</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-green-500 transition-colors cursor-pointer" id="voterFrontUpload">
+                                    <input type="file" id="voterFront" name="voterFront" accept=".jpg,.jpeg,.png" class="hidden">
+                                    <div id="voterFrontPreview">
+                                        <i class="fas fa-id-card text-gray-400 text-3xl mb-4"></i>
+                                        <p class="text-gray-600 text-sm">Front side</p>
+                                        <p class="text-xs text-gray-500 mt-2">JPG or PNG, max 2.5MB</p>
+                                    </div>
+                                </div>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="voterFrontError"></div>
+                            </div>
+                            
+                            <!-- Voter's Card Back -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-4">Voter's Card (Back)</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-green-500 transition-colors cursor-pointer" id="voterBackUpload">
+                                    <input type="file" id="voterBack" name="voterBack" accept=".jpg,.jpeg,.png" class="hidden">
+                                    <div id="voterBackPreview">
+                                        <i class="fas fa-id-card-alt text-gray-400 text-3xl mb-4"></i>
+                                        <p class="text-gray-600 text-sm">Back side</p>
+                                        <p class="text-xs text-gray-500 mt-2">JPG or PNG, max 2.5MB</p>
+                                    </div>
+                                </div>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="voterBackError"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between mt-8 pt-6 border-t">
+                            <button type="button" class="prev-step text-gray-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-200">
+                                <i class="fas fa-arrow-left mr-2"></i> Back
+                            </button>
+                            <button type="button" class="next-step bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg">
+                                Next: Account Setup <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Account Setup -->
+                    <div class="form-step hidden" data-step="4">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-lock text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold font-poppins text-gray-900">Account Setup</h3>
+                                <p class="text-gray-600">Create your login credentials</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="password" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Password <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input type="password" id="password" name="password" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all pr-10"
+                                        placeholder="Create a strong password">
+                                    <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-gray-600" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
                                 <div class="password-strength mt-2 hidden">
                                     <div class="flex items-center space-x-2">
                                         <div class="h-2 flex-1 bg-gray-200 rounded-full">
@@ -168,100 +635,774 @@
                                         <span class="text-sm password-strength-text"></span>
                                     </div>
                                 </div>
-                                <div class="error-message hidden" id="password_error"></div>
+                                <div class="text-xs text-gray-500 mt-2">
+                                    Must be at least 8 characters with uppercase, lowercase, and number
+                                </div>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="passwordError"></div>
                             </div>
                             
                             <div>
-                                <label for="confirm_password" class="block text-sm font-medium text-text-gray mb-2">Confirm Password *</label>
-                                <input type="password" id="confirm_password" name="confirm_password" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
-                                    placeholder="Re-enter your password">
-                                <div class="error-message hidden" id="confirm_password_error"></div>
+                                <label for="confirmPassword" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Confirm Password <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all pr-10"
+                                        placeholder="Re-enter your password">
+                                    <button type="button" class="absolute right-3 top-3 text-gray-400 hover:text-gray-600" id="toggleConfirmPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="error-message hidden mt-2 text-sm text-red-600" id="confirmPasswordError"></div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Terms and Submit -->
-                    <div class="border-t pt-6">
-                        <div class="flex items-start mb-6">
-                            <input type="checkbox" id="terms" name="terms" required
-                                class="mt-1 mr-3 rounded border-gray-300 text-green focus:ring-green">
-                            <label for="terms" class="text-sm text-text-gray">
-                                I agree to the <a href="terms.html" class="text-green hover:underline">Terms of Service</a> and 
-                                <a href="privacy.html" class="text-green hover:underline">Privacy Policy</a>. I confirm that all 
-                                information provided is accurate and I meet the eligibility requirements for YCM membership.
-                            </label>
-                        </div>
-                        <div class="error-message hidden" id="terms_error"></div>
                         
-                        <button type="submit" id="submitBtn"
-                            class="w-full bg-green text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition focus:ring-2 focus:ring-green focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed">
-                            <span class="flex items-center justify-center">
+                        <div class="mt-6">
+                            <div class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" required
+                                    class="mt-1 mr-3 rounded border-gray-300 text-green-600 focus:ring-green-500">
+                                <label for="terms" class="text-sm text-gray-600">
+                                    I agree to the <a href="terms.html" class="text-green-600 hover:underline font-medium">Terms of Service</a>, 
+                                    <a href="privacy.html" class="text-green-600 hover:underline font-medium">Privacy Policy</a>, and 
+                                    <a href="constitution.html" class="text-green-600 hover:underline font-medium">YCM Constitution</a>. 
+                                    I confirm that all information provided is accurate and truthful.
+                                </label>
+                            </div>
+                            <div class="error-message hidden mt-2 text-sm text-red-600" id="termsError"></div>
+                        </div>
+                        
+                        <div class="flex justify-between mt-8 pt-6 border-t">
+                            <button type="button" class="prev-step text-gray-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-200">
+                                <i class="fas fa-arrow-left mr-2"></i> Back
+                            </button>
+                            <button type="submit" id="submitBtn" class="bg-green-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center">
                                 <span id="submitText">Complete Registration</span>
-                                <div class="spinner hidden ml-2" id="submitSpinner"></div>
-                            </span>
-                        </button>
+                                <i class="fas fa-spinner fa-spin ml-2 hidden" id="submitSpinner"></i>
+                            </button>
+                        </div>
                     </div>
                 </form>
                 
                 <!-- Success Message -->
-                <div id="successMessage" class="hidden text-center py-8">
-                    <div class="w-16 h-16 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
+                <div id="successMessage" class="hidden text-center py-8 animate-fade-in">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-check-circle text-green-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-deep-navy mb-2">Registration Successful!</h3>
-                    <p class="text-text-gray mb-4" id="successDetails"></p>
-                    <a href="login.html" class="bg-gold text-deep-navy px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition inline-block">
-                        Proceed to Login
-                    </a>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-900 mb-2">Registration Successful!</h3>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto" id="successDetails">
+                        Thank you for registering with YCM. Your application has been submitted successfully. 
+                        Our team will review your application and you will receive a confirmation email shortly.
+                    </p>
+                    <div class="space-x-4">
+                        <a href="login.html" class="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center">
+                            <i class="fas fa-sign-in-alt mr-2"></i>
+                            Proceed to Login
+                        </a>
+                        <a href="index.html" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-200 inline-flex items-center">
+                            <i class="fas fa-home mr-2"></i>
+                            Return to Home
+                        </a>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Registration Process -->
+            <div class="mt-12 glass p-8 rounded-2xl shadow-lg animate-fade-in-up">
+                <h3 class="text-2xl font-bold font-poppins text-gray-900 mb-6 text-center">Registration Process</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600 font-bold text-xl">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Complete Form</h4>
+                        <p class="text-gray-600 text-sm">Fill out the registration form with accurate information</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 font-bold text-xl">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Upload Documents</h4>
+                        <p class="text-gray-600 text-sm">Upload required identification documents</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600 font-bold text-xl">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Admin Review</h4>
+                        <p class="text-gray-600 text-sm">Your application will be reviewed by YCM admin team</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-600 font-bold text-xl">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Approval & Welcome</h4>
+                        <p class="text-gray-600 text-sm">Receive approval and welcome package</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                    <div class="flex">
+                        <i class="fas fa-info-circle text-blue-500 mr-3 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-blue-800 mb-2">What happens after registration?</h4>
+                            <ul class="text-sm text-blue-700 space-y-1">
+                                <li>• You will receive a confirmation email with your application details</li>
+                                <li>• Your application will be reviewed within 3-5 business days</li>
+                                <li>• Once approved, you'll receive your membership ID and digital card</li>
+                                <li>• You'll gain access to all member benefits and the member dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Already a Member? -->
+            <div class="mt-8 text-center animate-fade-in-up">
+                <p class="text-gray-600">
+                    Already have an account? 
+                    <a href="login.html" class="text-green-600 font-semibold hover:underline">Login here</a>
+                </p>
+                <p class="text-gray-600 mt-2">
+                    Having issues with registration? 
+                    <a href="contact.html" class="text-green-600 font-semibold hover:underline">Contact support</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <!-- Benefits Section -->
-            <div class="mt-12 glass rounded-2xl p-8 fade-in-up">
-                <h2 class="text-3xl font-bold text-deep-navy mb-6 text-center">Membership Benefits</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-deep-navy mb-2">Networking</h3>
-                        <p class="text-text-gray">Connect with like-minded youth across Nigeria and build valuable relationships.</p>
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 animate-fade-in-up">
+                <h2 class="text-3xl font-bold font-poppins text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Common questions about YCM membership</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+                    <button class="faq-question w-full text-left p-6 font-semibold text-gray-900 hover:bg-gray-50 transition-colors flex justify-between items-center">
+                        <span>Is YCM membership really free?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                        Yes, YCM membership is completely free for all eligible Nigerian youth. There are no registration fees or annual dues. We believe in making youth empowerment accessible to everyone.
                     </div>
-                    
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-deep-navy mb-2">Training</h3>
-                        <p class="text-text-gray">Access leadership training, skill development programs, and workshops.</p>
+                </div>
+                
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+                    <button class="faq-question w-full text-left p-6 font-semibold text-gray-900 hover:bg-gray-50 transition-colors flex justify-between items-center">
+                        <span>How long does approval take?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                        Approval typically takes 3-5 business days. During this time, our team reviews your application and documents. You will receive an email notification once your application is approved.
                     </div>
-                    
-                    <div class="text-center">
-                        <div class="w-12 h-12 bg-green rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-deep-navy mb-2">Opportunities</h3>
-                        <p class="text-text-gray">Get access to internships, volunteer opportunities, and community projects.</p>
+                </div>
+                
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+                    <button class="faq-question w-full text-left p-6 font-semibold text-gray-900 hover:bg-gray-50 transition-colors flex justify-between items-center">
+                        <span>What documents do I need?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                        You need: 1) Recent passport photograph, 2) Front side of your voter's card, 3) Back side of your voter's card. All documents must be clear and legible, and each file should not exceed 2.5MB.
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+                    <button class="faq-question w-full text-left p-6 font-semibold text-gray-900 hover:bg-gray-50 transition-colors flex justify-between items-center">
+                        <span>Can I register if I'm not in Nigeria?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                        Yes, you can register from anywhere in the world as long as you're a Nigerian citizen. However, you must be willing to participate in Nigerian activities and events when possible.
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-deep-navy text-white">
-        <!-- Footer content same as index.html -->
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-deep-navy to-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-6">Ready to Join YCM?</h2>
+            <p class="text-xl opacity-95 max-w-2xl mx-auto mb-8">
+                Join thousands of young Nigerians who are already creating positive change in their communities
+            </p>
+            <div class="space-x-4">
+                <a href="#registration-form" class="bg-white text-green-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center">
+                    <i class="fas fa-user-plus mr-2"></i>
+                    Register Now
+                </a>
+                <a href="about.html" class="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-green-600 transition-all duration-200 inline-flex items-center">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-1 mb-6">
+                        <div class="w-20 h-20 rounded-xl flex items-center justify-center">
+                            <img src="./assets/images/logooo.png" alt="" class="rounded-lg">
+                        </div>
+                        <div class="">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-300">Y.C.M</span>
+                                <p class="text-md font-bold text-gray-300 -mt-1">Youth Concessive Movement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Empowering Nigerian youth through civic engagement, leadership development, and community service since 2020.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-200 transform hover:-translate-y-1">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="membership.html" class="text-gray-300 hover:text-white transition-colors">Membership</a></li>
+                        <li><a href="events.html" class="text-gray-300 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News</a></li>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="constitution.html" class="text-gray-300 hover:text-white transition-colors">Constitution</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-green-400"></i>
+                            123 Youth Avenue, Central District, Abuja
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-green-400"></i>
+                            info@ycm.ng
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-green-400"></i>
+                            +234 800 123 4567
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Youth Concessive Movement. All rights reserved. Empowering Nigerian Youth for a Better Tomorrow.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition-all duration-200 transform hover:-translate-y-1 hidden">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Membership Page Specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize multi-step form
+            initMultiStepForm();
+            
+            // Initialize file upload previews
+            initFileUploads();
+            
+            // Initialize FAQ accordion
+            initFAQAccordion();
+            
+            // Initialize LGA dropdown based on state selection
+            initLGADropdown();
+            
+            // Initialize password strength checker
+            initPasswordStrengthChecker();
+            
+            // Initialize password visibility toggle
+            initPasswordToggle();
+        });
+
+        function initMultiStepForm() {
+            const form = document.getElementById('membershipForm');
+            const formSteps = document.querySelectorAll('.form-step');
+            const nextButtons = document.querySelectorAll('.next-step');
+            const prevButtons = document.querySelectorAll('.prev-step');
+            const progressSteps = document.querySelectorAll('.form-step');
+            
+            let currentStep = 1;
+
+            // Next button functionality
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStepElement = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+                    
+                    if (validateStep(currentStep)) {
+                        currentStepElement.classList.remove('active');
+                        currentStepElement.classList.add('hidden');
+                        
+                        currentStep++;
+                        const nextStepElement = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+                        if (nextStepElement) {
+                            nextStepElement.classList.remove('hidden');
+                            nextStepElement.classList.add('active');
+                            
+                            // Update progress indicator
+                            updateProgressIndicator(currentStep);
+                            
+                            // Scroll to top of form
+                            nextStepElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Previous button functionality
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStepElement = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+                    currentStepElement.classList.remove('active');
+                    currentStepElement.classList.add('hidden');
+                    
+                    currentStep--;
+                    const prevStepElement = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+                    if (prevStepElement) {
+                        prevStepElement.classList.remove('hidden');
+                        prevStepElement.classList.add('active');
+                        
+                        // Update progress indicator
+                        updateProgressIndicator(currentStep);
+                        
+                        // Scroll to top of form
+                        prevStepElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            function validateStep(step) {
+                let isValid = true;
+                
+                // Clear previous errors
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.classList.add('hidden');
+                });
+                
+                switch(step) {
+                    case 1:
+                        // Validate personal information
+                        const requiredFields = ['fullName', 'email', 'phone', 'dob', 'gender', 'occupation', 'address'];
+                        requiredFields.forEach(field => {
+                            const element = document.getElementById(field);
+                            const errorElement = document.getElementById(field + 'Error');
+                            
+                            if (!element.value.trim()) {
+                                if (errorElement) {
+                                    errorElement.textContent = 'This field is required';
+                                    errorElement.classList.remove('hidden');
+                                }
+                                element.classList.add('border-red-500');
+                                isValid = false;
+                            } else {
+                                element.classList.remove('border-red-500');
+                                
+                                // Additional validations
+                                if (field === 'email') {
+                                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    if (!emailRegex.test(element.value)) {
+                                        errorElement.textContent = 'Please enter a valid email address';
+                                        errorElement.classList.remove('hidden');
+                                        element.classList.add('border-red-500');
+                                        isValid = false;
+                                    }
+                                }
+                                
+                                if (field === 'dob') {
+                                    const birthDate = new Date(element.value);
+                                    const today = new Date();
+                                    let age = today.getFullYear() - birthDate.getFullYear();
+                                    const monthDiff = today.getMonth() - birthDate.getMonth();
+                                    
+                                    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                                        age--;
+                                    }
+                                    
+                                    if (age < 16) {
+                                        errorElement.textContent = 'You must be at least 16 years old';
+                                        errorElement.classList.remove('hidden');
+                                        element.classList.add('border-red-500');
+                                        isValid = false;
+                                    } else if (age > 35) {
+                                        errorElement.textContent = 'Maximum age is 35 years';
+                                        errorElement.classList.remove('hidden');
+                                        element.classList.add('border-red-500');
+                                        isValid = false;
+                                    }
+                                }
+                            }
+                        });
+                        break;
+                        
+                    case 2:
+                        // Validate location information
+                        const locationFields = ['state', 'lga'];
+                        locationFields.forEach(field => {
+                            const element = document.getElementById(field);
+                            const errorElement = document.getElementById(field + 'Error');
+                            
+                            if (!element.value) {
+                                if (errorElement) {
+                                    errorElement.textContent = 'This field is required';
+                                    errorElement.classList.remove('hidden');
+                                }
+                                element.classList.add('border-red-500');
+                                isValid = false;
+                            } else {
+                                element.classList.remove('border-red-500');
+                            }
+                        });
+                        break;
+                        
+                    case 3:
+                        // Validate document uploads
+                        const fileFields = ['passportPhoto', 'voterFront', 'voterBack'];
+                        fileFields.forEach(field => {
+                            const element = document.getElementById(field);
+                            const errorElement = document.getElementById(field.replace('Photo', '') + 'Error');
+                            
+                            if (!element.files || element.files.length === 0) {
+                                if (errorElement) {
+                                    errorElement.textContent = 'This document is required';
+                                    errorElement.classList.remove('hidden');
+                                }
+                                isValid = false;
+                            } else {
+                                const file = element.files[0];
+                                const maxSize = 2.5 * 1024 * 1024; // 2.5MB
+                                
+                                if (file.size > maxSize) {
+                                    if (errorElement) {
+                                        errorElement.textContent = 'File size must be less than 2.5MB';
+                                        errorElement.classList.remove('hidden');
+                                    }
+                                    isValid = false;
+                                }
+                                
+                                const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+                                if (!allowedTypes.includes(file.type)) {
+                                    if (errorElement) {
+                                        errorElement.textContent = 'Only JPG and PNG files are allowed';
+                                        errorElement.classList.remove('hidden');
+                                    }
+                                    isValid = false;
+                                }
+                            }
+                        });
+                        break;
+                }
+                
+                return isValid;
+            }
+
+            function updateProgressIndicator(step) {
+                // Update the progress steps
+                const progressCircles = document.querySelectorAll('.flex.flex-col.items-center');
+                progressCircles.forEach((circle, index) => {
+                    const stepNumber = index + 1;
+                    const numberElement = circle.querySelector('div');
+                    const textElement = circle.querySelector('span');
+                    
+                    if (stepNumber <= step) {
+                        numberElement.classList.remove('bg-gray-200', 'text-gray-500');
+                        numberElement.classList.add('bg-green-600', 'text-white');
+                        textElement.classList.remove('text-gray-500');
+                        textElement.classList.add('text-gray-700', 'font-semibold');
+                    } else {
+                        numberElement.classList.remove('bg-green-600', 'text-white');
+                        numberElement.classList.add('bg-gray-200', 'text-gray-500');
+                        textElement.classList.remove('text-gray-700', 'font-semibold');
+                        textElement.classList.add('text-gray-500');
+                    }
+                });
+            }
+
+            // Form submission
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    if (validateStep(4)) {
+                        const submitBtn = document.getElementById('submitBtn');
+                        const submitText = document.getElementById('submitText');
+                        const submitSpinner = document.getElementById('submitSpinner');
+                        
+                        // Show loading state
+                        submitBtn.disabled = true;
+                        submitText.textContent = 'Processing...';
+                        submitSpinner.classList.remove('hidden');
+                        
+                        // Simulate form submission
+                        setTimeout(() => {
+                            // Show success message
+                            form.classList.add('hidden');
+                            document.getElementById('successMessage').classList.remove('hidden');
+                            
+                            // Reset button state
+                            submitBtn.disabled = false;
+                            submitText.textContent = 'Complete Registration';
+                            submitSpinner.classList.add('hidden');
+                            
+                            // Scroll to success message
+                            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                        }, 2000);
+                    }
+                });
+            }
+        }
+
+        function initFileUploads() {
+            // Passport photo upload
+            const passportUpload = document.getElementById('passportUpload');
+            const passportInput = document.getElementById('passportPhoto');
+            const passportPreview = document.getElementById('passportPreview');
+            
+            if (passportUpload && passportInput) {
+                passportUpload.addEventListener('click', () => passportInput.click());
+                passportInput.addEventListener('change', function() {
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            passportPreview.innerHTML = `
+                                <div class="relative">
+                                    <img src="${e.target.result}" alt="Passport Preview" class="w-24 h-24 object-cover rounded-lg mx-auto">
+                                    <p class="text-sm text-gray-600 mt-2">Passport uploaded</p>
+                                    <p class="text-xs text-green-600">Click to change</p>
+                                </div>
+                            `;
+                        };
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
+            
+            // Voter card front upload
+            const voterFrontUpload = document.getElementById('voterFrontUpload');
+            const voterFrontInput = document.getElementById('voterFront');
+            const voterFrontPreview = document.getElementById('voterFrontPreview');
+            
+            if (voterFrontUpload && voterFrontInput) {
+                voterFrontUpload.addEventListener('click', () => voterFrontInput.click());
+                voterFrontInput.addEventListener('change', function() {
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            voterFrontPreview.innerHTML = `
+                                <div class="relative">
+                                    <img src="${e.target.result}" alt="Voter Front Preview" class="w-20 h-20 object-cover rounded-lg mx-auto">
+                                    <p class="text-xs text-gray-600 mt-2">Front uploaded</p>
+                                    <p class="text-xs text-green-600">Click to change</p>
+                                </div>
+                            `;
+                        };
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
+            
+            // Voter card back upload
+            const voterBackUpload = document.getElementById('voterBackUpload');
+            const voterBackInput = document.getElementById('voterBack');
+            const voterBackPreview = document.getElementById('voterBackPreview');
+            
+            if (voterBackUpload && voterBackInput) {
+                voterBackUpload.addEventListener('click', () => voterBackInput.click());
+                voterBackInput.addEventListener('change', function() {
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            voterBackPreview.innerHTML = `
+                                <div class="relative">
+                                    <img src="${e.target.result}" alt="Voter Back Preview" class="w-20 h-20 object-cover rounded-lg mx-auto">
+                                    <p class="text-xs text-gray-600 mt-2">Back uploaded</p>
+                                    <p class="text-xs text-green-600">Click to change</p>
+                                </div>
+                            `;
+                        };
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
+        }
+
+        function initFAQAccordion() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    if (answer.classList.contains('hidden')) {
+                        answer.classList.remove('hidden');
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                    
+                    // Close other FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.classList.add('hidden');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                });
+            });
+        }
+
+        function initLGADropdown() {
+            const stateSelect = document.getElementById('state');
+            const lgaSelect = document.getElementById('lga');
+            
+            if (stateSelect && lgaSelect) {
+                stateSelect.addEventListener('change', function() {
+                    const state = this.value;
+                    
+                    // Clear current LGAs
+                    lgaSelect.innerHTML = '<option value="">Select LGA</option>';
+                    
+                    if (state) {
+                        // Add sample LGAs based on state (in a real app, this would come from an API)
+                        const lgas = getLGAsByState(state);
+                        lgas.forEach(lga => {
+                            const option = document.createElement('option');
+                            option.value = lga.toLowerCase().replace(/\s+/g, '-');
+                            option.textContent = lga;
+                            lgaSelect.appendChild(option);
+                        });
+                    }
+                });
+            }
+            
+            function getLGAsByState(state) {
+                // Sample LGAs for demonstration
+                const lgaMap = {
+                    'lagos': ['Agege', 'Ajeromi-Ifelodun', 'Alimosho', 'Amuwo-Odofin', 'Badagry', 'Apapa', 'Epe', 'Eti-Osa', 'Ibeju-Lekki', 'Ifako-Ijaiye', 'Ikeja', 'Ikorodu', 'Kosofe', 'Lagos Island', 'Lagos Mainland', 'Mushin', 'Ojo', 'Oshodi-Isolo', 'Shomolu', 'Surulere'],
+                    'abuja': ['Abaji', 'Bwari', 'Gwagwalada', 'Kuje', 'Kwali', 'Municipal Area Council'],
+                    'rivers': ['Port Harcourt', 'Obio-Akpor', 'Okrika', 'Ogu–Bolo', 'Eleme', 'Tai', 'Gokana', 'Khana', 'Oyigbo', 'Opobo–Nkoro', 'Andoni', 'Bonny', 'Degema', 'Asari-Toru', 'Akuku-Toru', 'Abua–Odual', 'Ahoada West', 'Ahoada East', 'Ogba–Egbema–Ndoni', 'Emohua', 'Ikwerre', 'Etche', 'Omuma']
+                };
+                
+                return lgaMap[state] || ['Select LGA'];
+            }
+        }
+
+        function initPasswordStrengthChecker() {
+            const passwordInput = document.getElementById('password');
+            const strengthBar = document.querySelector('.password-strength-bar');
+            const strengthText = document.querySelector('.password-strength-text');
+            const strengthContainer = document.querySelector('.password-strength');
+            
+            if (passwordInput) {
+                passwordInput.addEventListener('input', function() {
+                    const password = this.value;
+                    const strength = calculatePasswordStrength(password);
+                    
+                    if (password.length > 0) {
+                        strengthContainer.classList.remove('hidden');
+                        strengthBar.style.width = strength.percentage + '%';
+                        strengthBar.style.backgroundColor = strength.color;
+                        strengthText.textContent = strength.text;
+                        strengthText.style.color = strength.color;
+                    } else {
+                        strengthContainer.classList.add('hidden');
+                    }
+                });
+            }
+            
+            function calculatePasswordStrength(password) {
+                let score = 0;
+                
+                // Length check
+                if (password.length >= 8) score += 25;
+                if (password.length >= 12) score += 25;
+                
+                // Mixed case check
+                if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) score += 25;
+                
+                // Numbers and special characters
+                if (password.match(/([0-9])/)) score += 15;
+                if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) score += 10;
+                
+                // Determine strength level
+                if (score < 50) {
+                    return { percentage: score, text: 'Weak', color: '#ef4444' };
+                } else if (score < 75) {
+                    return { percentage: score, text: 'Fair', color: '#f59e0b' };
+                } else {
+                    return { percentage: score, text: 'Strong', color: '#10b981' };
+                }
+            }
+        }
+
+        function initPasswordToggle() {
+            const togglePassword = document.getElementById('togglePassword');
+            const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword');
+            
+            if (togglePassword && passwordInput) {
+                togglePassword.addEventListener('click', function() {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+                    this.querySelector('i').classList.toggle('fa-eye');
+                    this.querySelector('i').classList.toggle('fa-eye-slash');
+                });
+            }
+            
+            if (toggleConfirmPassword && confirmPasswordInput) {
+                toggleConfirmPassword.addEventListener('click', function() {
+                    const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    confirmPasswordInput.setAttribute('type', type);
+                    this.querySelector('i').classList.toggle('fa-eye');
+                    this.querySelector('i').classList.toggle('fa-eye-slash');
+                });
+            }
+        }
+
+    </script>
 </body>
 </html>

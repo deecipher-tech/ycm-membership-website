@@ -1,6 +1,26 @@
 // Main JavaScript for Youth Concessive Movement Website
 
 document.addEventListener('DOMContentLoaded', function() {
+     // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('hidden');
+                backToTopBtn.classList.add('flex');
+            } else {
+                backToTopBtn.classList.remove('flex');
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
     // Mobile Menu Toggle
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');

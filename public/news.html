@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Announcements - Youth Concessive Movement</title>
+    <meta name="description" content="Latest news, announcements, and press releases from Youth Concessive Movement.">
+    <meta property="og:title" content="YCM News & Announcements">
+    <meta property="og:description" content="Stay updated with the latest news and announcements from Youth Concessive Movement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ycm.ng/news.html">
+    <meta property="og:image" content="https://ycm.ng/assets/news-hero.jpg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-bg-top to-bg-bottom">
+    <!-- Navigation -->
+    <nav class="glass fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <img src="../assets/logo-placeholder.svg" alt="YCM Logo" class="h-8 w-auto">
+                        <span class="ml-2 text-xl font-bold text-deep-navy">YCM</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="membership.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Membership</a>
+                        <a href="events.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Events</a>
+                        <a href="news.html" class="text-green font-semibold px-3 py-2 rounded-md text-sm font-medium">News</a>
+                        <a href="gallery.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+                        <a href="contact.html" class="text-deep-navy hover:text-green px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="login.html" class="bg-green text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition">Login</a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button bg-deep-navy p-2 rounded-md text-white hover:bg-opacity-80">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white bg-opacity-95">
+                <a href="index.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="membership.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Membership</a>
+                <a href="events.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="news.html" class="text-green block px-3 py-2 rounded-md text-base font-medium">News</a>
+                <a href="gallery.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="contact.html" class="text-deep-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="login.html" class="bg-green text-white block px-3 py-2 rounded-md text-base font-medium">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-r from-deep-navy via-green to-lime text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 fade-in-up">News & Announcements</h1>
+                <p class="text-xl max-w-3xl mx-auto fade-in-up">
+                    Stay updated with the latest news, announcements, and press releases from Youth Concessive Movement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1">
+                    <div class="relative">
+                        <input type="text" id="newsSearch" placeholder="Search news articles..." 
+                            class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
+                        <svg class="w-5 h-5 absolute left-4 top-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <select id="newsCategory" class="w-full md:w-auto px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent">
+                        <option value="all">All Categories</option>
+                        <option value="announcement">Announcements</option>
+                        <option value="press">Press Releases</option>
+                        <option value="event">Event Updates</option>
+                        <option value="partnership">Partnerships</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="py-16 bg-neutral-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-3xl font-bold text-deep-navy mb-4">Featured News</h2>
+                <p class="text-lg text-text-gray max-w-3xl mx-auto">Top stories and important announcements from YCM</p>
+                <div class="w-24 h-1 bg-green mx-auto mt-4"></div>
+            </div>
+            
+            <!-- Featured Article -->
+            <div class="glass rounded-2xl overflow-hidden mb-12 fade-in-up">
+                <div class="md:flex">
+                    <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-r from-green to-lime"></div>
+                    <div class="md:w-3/5 p-8">
+                        <div class="flex items-center text-sm text-text-gray mb-3">
+                            <span class="bg-mint text-green px-2 py-1 rounded">Featured</span>
+                            <span class="mx-2">•</span>
+                            <span>January 15, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>By Admin Team</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deep-navy mb-4">YCM Launches Digital Skills Training Program</h3>
+                        <p class="text-text-gray mb-6">
+                            Youth Concessive Movement announces new digital skills training initiative to empower 5,000 Nigerian youth with in-demand tech skills. The program will offer courses in web development, digital marketing, data analysis, and cybersecurity.
+                        </p>
+                        <a href="news-article.html" class="text-green font-semibold hover:text-opacity-80">
+                            Read Full Article →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-3xl font-bold text-deep-navy mb-4">Latest News</h2>
+                <p class="text-lg text-text-gray max-w-3xl mx-auto">Recent announcements and updates from YCM</p>
+                <div class="w-24 h-1 bg-green mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="news-card glass rounded-xl overflow-hidden fade-in-up" data-category="announcement">
+                    <div class="h-48 bg-gradient-to-r from-sky to-green"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-text-gray mb-3">
+                            <span class="bg-mint text-green px-2 py-1 rounded text-xs">Announcement</span>
+                            <span class="mx-2">•</span>
+                            <span>January 10, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-deep-navy mb-3">New Leadership Structure Announced</h3>
+                        <p class="text-text-gray mb-4">
+                            YCM introduces new leadership roles and state coordinators to better serve our growing membership across Nigeria.
+                        </p>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 text-sm">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="news-card glass rounded-xl overflow-hidden fade-in-up" data-category="partnership">
+                    <div class="h-48 bg-gradient-to-r from-lime to-gold"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-text-gray mb-3">
+                            <span class="bg-mint text-green px-2 py-1 rounded text-xs">Partnership</span>
+                            <span class="mx-2">•</span>
+                            <span>January 5, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-deep-navy mb-3">YCM Partners with Tech Companies for Internship Program</h3>
+                        <p class="text-text-gray mb-4">
+                            Youth Concessive Movement forms partnerships with leading technology companies to provide internship opportunities for members.
+                        </p>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 text-sm">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="news-card glass rounded-xl overflow-hidden fade-in-up" data-category="event">
+                    <div class="h-48 bg-gradient-to-r from-gold to-sky"></div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-text-gray mb-3">
+                            <span class="bg-mint text-green px-2 py-1 rounded text-xs">Event Update</span>
+                            <span class="mx-2">•</span>
+                            <span>December 28, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-deep-navy mb-3">Youth Empowerment Summit 2025 Registration Opens</h3>
+                        <p class="text-text-gray mb-4">
+                            Registration is now open for the Youth Empowerment Summit 2025. Early bird discounts available until February 15.
+                        </p>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 text-sm">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More -->
+            <div class="text-center mt-12 fade-in-up">
+                <button id="loadMoreNews" class="bg-deep-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    Load More News
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Archive -->
+    <section class="py-16 bg-neutral-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-3xl font-bold text-deep-navy mb-4">News Archive</h2>
+                <p class="text-lg text-text-gray max-w-3xl mx-auto">Browse through our previous news articles and announcements</p>
+                <div class="w-24 h-1 bg-green mx-auto mt-4"></div>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Archive Item 1 -->
+                <div class="bg-white p-6 rounded-xl fade-in-up">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-deep-navy mb-2">Community Projects Achieve Major Milestones</h3>
+                            <div class="flex items-center text-sm text-text-gray">
+                                <span>December 15, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 mt-2 md:mt-0">
+                            Read Article →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Archive Item 2 -->
+                <div class="bg-white p-6 rounded-xl fade-in-up">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-deep-navy mb-2">YCM Members Excel in National Competitions</h3>
+                            <div class="flex items-center text-sm text-text-gray">
+                                <span>November 30, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>4 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 mt-2 md:mt-0">
+                            Read Article →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Archive Item 3 -->
+                <div class="bg-white p-6 rounded-xl fade-in-up">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-deep-navy mb-2">Annual Report 2024 Released</h3>
+                            <div class="flex items-center text-sm text-text-gray">
+                                <span>November 20, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 mt-2 md:mt-0">
+                            Read Article →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Archive Item 4 -->
+                <div class="bg-white p-6 rounded-xl fade-in-up">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-deep-navy mb-2">New State Chapters Established in North-East Region</h3>
+                            <div class="flex items-center text-sm text-text-gray">
+                                <span>October 25, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green font-semibold hover:text-opacity-80 mt-2 md:mt-0">
+                            Read Article →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12 fade-in-up">
+                <nav class="flex items-center space-x-2">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-500 hover:bg-green hover:text-white hover:border-green transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-green text-white font-semibold">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 hover:bg-green hover:text-white hover:border-green transition">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 hover:bg-green hover:text-white hover:border-green transition">3</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-500 hover:bg-green hover:text-white hover:border-green transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-gradient-to-r from-deep-navy to-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4 fade-in-up">Stay Updated</h2>
+            <p class="text-xl mb-8 fade-in-up">
+                Subscribe to our newsletter and never miss important announcements and news updates.
+            </p>
+            <form class="max-w-md mx-auto fade-in-up">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Enter your email" 
+                        class="flex-1 px-4 py-3 rounded-lg text-deep-navy focus:outline-none focus:ring-2 focus:ring-gold">
+                    <button type="submit" class="bg-gold text-deep-navy px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-sm text-gray-300 mt-3">
+                    By subscribing, you agree to our Privacy Policy and consent to receive updates from YCM.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-navy text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="../assets/logo-placeholder.svg" alt="YCM Logo" class="h-8 w-auto">
+                        <span class="ml-2 text-xl font-bold">YCM</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Empowering Nigerian youth through civic engagement, leadership development, and community service.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.042-3.441.219-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.017z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="membership.html" class="text-gray-300 hover:text-white transition">Membership</a></li>
+                        <li><a href="events.html" class="text-gray-300 hover:text-white transition">Events</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition">News</a></li>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="constitution.html" class="text-gray-300 hover:text-white transition">Constitution</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>123 Youth Avenue</p>
+                        <p>Central District, Abuja</p>
+                        <p>Nigeria</p>
+                        <p>info@ycm.ng</p>
+                        <p>+234 800 123 4567</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Youth Concessive Movement. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // News filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('newsSearch');
+            const categorySelect = document.getElementById('newsCategory');
+            const newsCards = document.querySelectorAll('.news-card');
+            
+            function filterNews() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categorySelect.value;
+                
+                newsCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const excerpt = card.querySelector('p').textContent.toLowerCase();
+                    const category = card.dataset.category;
+                    
+                    const matchesSearch = searchTerm === '' || title.includes(searchTerm) || excerpt.includes(searchTerm);
+                    const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+                    
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                        card.classList.add('fade-in-up');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('fade-in-up');
+                    }
+                });
+            }
+            
+            searchInput.addEventListener('input', filterNews);
+            categorySelect.addEventListener('change', filterNews);
+            
+            // Load more news functionality
+            const loadMoreBtn = document.getElementById('loadMoreNews');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    this.textContent = 'Loading...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert('More news articles would be loaded from the server in a real application.');
+                        this.textContent = 'Load More News';
+                        this.disabled = false;
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

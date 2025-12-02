@@ -1,0 +1,19 @@
+{
+  "name": "ycm",
+  "version": "1.0.0",
+  "description": "Youth Concessive Movement - Membership & Info Portal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/styles.css -o ./public/assets/css/main.css --watch",
+    "build": "tailwindcss -i ./css/styles.css -o ./public/assets/css/main.css --minify",
+    "build-css": "tailwindcss -i ./css/styles.css -o ./public/assets/css/main.css"
+  },
+  "keywords": ["ycm", "youth", "nigeria", "membership"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
+}

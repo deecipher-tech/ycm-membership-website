@@ -1,0 +1,76 @@
+ycm_project/
+├─ README.md
+├─ LICENSE
+├─ .env.example
+├─ package.json 
+├─ tailwind.config.js  
+├─ postcss.config.js 
+├─ node_modules/
+├─ assets/
+│  ├─ logo-placeholder.svg
+│  ├─ hero-bg.jpg
+│  └─ sample/
+├─ css/
+│  └─ styles.css (source file)
+├─ js/
+│  ├─ main.js
+│  └─ vendor/
+├─ public/
+│  ├─ index.html
+│  ├─ about.html
+│  ├─ membership.html
+│  ├─ login.html
+│  ├─ events.html
+│  ├─ news.html
+│  ├─ gallery.html
+│  ├─ contact.html
+│  ├─ privacy.html
+│  ├─ terms.html
+│  ├─ constitution.html
+│  └─ assets/
+│     └─ css/
+│        └─ main.css 
+├─ api/
+│  ├─ db.php
+│  ├─ states.php
+│  ├─ lgas.php
+│  ├─ register.php
+│  ├─ login.php
+│  ├─ forgot_password.php
+│  ├─ reset_password.php
+│  ├─ events.php
+│  ├─ news.php
+│  └─ gallery.php
+├─ admin/
+│  ├─ login.php
+│  ├─ dashboard.php
+│  ├─ members.php
+│  ├─ member_view.php
+│  ├─ approve_member.php
+│  ├─ reject_member.php
+│  ├─ events.php
+│  ├─ news.php
+│  ├─ gallery.php
+│  ├─ settings.php
+│  ├─ export.php
+│  └─ backup.php
+├─ uploads/
+│  ├─ members/
+│  ├─ events/
+│  ├─ gallery/
+│  └─ .htaccess
+├─ sql/
+│  ├─ ycm_schema.sql
+│  ├─ ycm_seed.sql
+│  ├─ nigeria_states_lgas.csv
+│  └─ import_states_lgas.sql
+├─ lib/
+│  ├─ functions.php
+│  ├─ email.php
+│  └─ sms.php
+├─ backup/
+│  └─ backup_db.sh
+└─ docs/
+   ├─ admin_manual.md
+   ├─ setup_production.md
+   └─ accessibility_seo_checklist.md

@@ -1032,18 +1032,6 @@
                 document.getElementById('totalImages').textContent = photoData.length;
             }
             
-            // Back to Top Button
-            const backToTopBtn = document.getElementById('back-to-top');
-            
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTopBtn.classList.remove('hidden');
-                    backToTopBtn.classList.add('flex');
-                } else {
-                    backToTopBtn.classList.remove('flex');
-                    backToTopBtn.classList.add('hidden');
-                }
-            });
             
             backToTopBtn.addEventListener('click', function() {
                 window.scrollTo({
@@ -1091,19 +1079,6 @@
                         document.body.removeChild(notification);
                     }, 300);
                 }, 3000);
-            }
-            
-            // Mobile menu toggle (if not in main.js)
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const mobileMenu = document.querySelector('.mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                    mobileMenu.classList.toggle('transform');
-                    mobileMenu.classList.toggle('opacity-0');
-                    mobileMenu.classList.toggle('opacity-100');
-                });
             }
         });
     </script>
